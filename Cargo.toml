@@ -1,0 +1,12 @@
+[package]
+name = "stupiderators"
+version = "0.1.0"
+edition = "2021"
+
+license = "MIT"
+description = "Iterators for Indeedee, mostly"
+repository = "https://www.github.com/gamma-delta/stupideratorss"
+keywords = ["iterator"]
+categories = []
+
+[dependencies]
