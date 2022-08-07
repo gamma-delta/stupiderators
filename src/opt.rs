@@ -53,3 +53,15 @@ where
         }
     }
 }
+
+impl<I> DoubleEndedIterator for OptionalIterator<I>
+where
+    I: DoubleEndedIterator,
+{
+    fn next_back(&mut self) -> Option<Self::Item> {
+        match self {
+            OptionalIterator::None => None,
+            OptionalIterator::Some(iter) => iter.next_back(),
+        }
+    }
+}
